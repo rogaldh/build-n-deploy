@@ -11,3 +11,7 @@
 ## Misc
 * `$ vagrant global-status` — outputs all active Vagrant\'s boxes
 * `$ vagrant reload BOX_ID` — reloads a box by `BOX_ID`
+
+## Links
+[ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64)
+[Vagrant CLI](https://www.vagrantup.com/docs/cli/)
