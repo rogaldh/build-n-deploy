@@ -1,0 +1,1 @@
+Nginx blank application server
