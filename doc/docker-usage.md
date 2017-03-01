@@ -11,9 +11,11 @@ $ sudo docker run -d -i -t \
 ```
 
 ### Run Docker image on Vagrant (nginx)
+LOCAL - inside image.
+EXTERNAL - environment (Vagrant in our case).
 ```
 $ sudo docker run -d -i -t \
-    -p IP_ADDRESS:8080:80 -p IP_ADDRESS:30022:22 -p IP_ADDRESS:1377:1377 \
+    -p EXTERNAL_IP_ADDRESS:EXTERNAL_PORT:LOCAL_PORT \
     -v EXTERNAL_DIR_TO_MOUNT:LOCAL_DIR_WHERE_SHOULD_MOUNT DOCKER_USERNAME/IMAGE_NAME \  /usr/sbin/nginx -g 'daemon off;'
 ```
 
