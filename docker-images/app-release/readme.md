@@ -7,7 +7,7 @@ Built on top of [`nodejs`](../nodejs/readme.md#L=14) docker image.
 Uses [`nginx-proxy`](../nginx-proxy/readme.md) docker image to work with.
 
 ## Notes
-[`Dockerfile`](./src/Dockerfile) contains kinda hack around `npm i` :\
+[`Dockerfile`](./Dockerfile) contains kinda hack around `npm i` :\
 
 ## How to
 ```
