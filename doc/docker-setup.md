@@ -1,10 +1,12 @@
 # Docker setup
 
-This guide describes pure docker installation on `ubuntu/trusty64` Vagrant's box
+This guide describes pure docker installation on `ubuntu/trusty64` Vagrant's box.
 
 ## Prerequisites
 - 64-bit Linux distributive
 - 3.10+ kernel version
+- [docker-setup.sh](../misc/docker-setup.sh)
+
 
 ## How to
 ```

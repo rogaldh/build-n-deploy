@@ -12,10 +12,10 @@
 `config.vm.synced_folder "src/", "/var/www", create: true` — allows to "inject" folder to vagrant
 
 ## Misc
-* `$ vagrant global-status` — outputs all active Vagrant\'s boxes
-* `$ vagrant reload BOX_ID` — reloads a box by `BOX_ID`
+- `$ vagrant global-status` — outputs all active Vagrant\'s boxes
+- `$ vagrant reload BOX_ID` — reloads a box by `BOX_ID`
 
-## Links
-[ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64)
-[Vagrant CLI](https://www.vagrantup.com/docs/cli/)
-[Vagrant Synced Folders](https://www.vagrantup.com/docs/synced-folders/basic_usage.html)
+## Refs
+- [ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64)
+- [Vagrant CLI](https://www.vagrantup.com/docs/cli/)
+- [Vagrant Synced Folders](https://www.vagrantup.com/docs/synced-folders/basic_usage.html)
