@@ -4,13 +4,13 @@ read -p " Which version of Node do you need to install (any valid version): " VE
 read -p " Are you using a 32-bit or 64-bit operating system ? Enter 64 or 32: " ARCHVALUE
 if [[ $ARCHVALUE = 32 ]]
     then
-    printf " using 32 \n"
+    printf " using $VERSIONNAME x86 \n"
     ARCHVALUE=86
     URL=http://nodejs.org/dist/v${VERSIONNAME}/node-v${VERSIONNAME}-linux-x${ARCHVALUE}.tar.xz
 
 elif [[ $ARCHVALUE = 64 ]]
     then
-    printf " using 64 \n"
+    printf " using $VERSIONNAME x64 \n"
     ARCHVALUE=64
     URL=http://nodejs.org/dist/v${VERSIONNAME}/node-v${VERSIONNAME}-linux-x${ARCHVALUE}.tar.xz
 
