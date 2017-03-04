@@ -19,3 +19,5 @@ $ sudo docker run -d \
     -p EXTERNAL_IP:EXTERNAL_PORT:80 \
     IMAGE_NAME
 ```
+## Notes
+[2-nd](../../doc/docker-usage.md#tips-and-tricks) tip is related to this image at some point.
