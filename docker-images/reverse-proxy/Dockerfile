@@ -1,4 +1,5 @@
-FROM nginx
+ARG FROM=nginx
+FROM ${FROM}
 
 WORKDIR /etc/nginx
 
