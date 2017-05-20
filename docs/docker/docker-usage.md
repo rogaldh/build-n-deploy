@@ -1,7 +1,9 @@
 # Docker usage
 Here are some examples of Docker & Vagrant usage on Windows. 
 
-### Run Docker image on Vagrant with dir & port forwarding
+## Examples
+
+#### Run Docker image on Vagrant with dir & port forwarding
 ```
 # run apache container at Vagrant box
 $ sudo docker run -d \
@@ -11,7 +13,7 @@ $ sudo docker run -d \
 	DOCKER_USERNAME/apache /usr/sbin/apache2ctl -D FOREGROUND
 ```
 
-### Run Docker image on Vagrant (nginx)
+#### Run Docker image on Vagrant (nginx)
 LOCAL - inside image.
 EXTERNAL - environment (Vagrant in our case).
 ```
@@ -22,10 +24,15 @@ $ sudo docker run -d \
     /usr/sbin/nginx -g 'daemon off;'
 ```
 
-### Connect to running docker image 
+#### Connect to running docker image 
 ```
 # `4daa67818979` — running container id
 sudo docker exec -i -t 4daa67818979 /bin/bash
+```
+
+#### Remove filtered containers
+```
+sudo docker ps --filter "status=exited" | cut -d ' ' -f 1 | xargs sudo docker rm
 ```
 
 ## Tips and tricks
