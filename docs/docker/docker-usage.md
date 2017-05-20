@@ -29,7 +29,7 @@ sudo docker exec -i -t 4daa67818979 /bin/bash
 ```
 
 ## Tips and tricks
-- There is an [issue](https://github.com/npm/npm/issues/9901#issuecomment-146585579) about npm install. Vagrant on Windows doesn\'t support symlinks. So we can use [`--no-bin-links`](https://docs.npmjs.com/misc/config#bin-links) flag for it.
+- There is an [issue](https://github.com/npm/npm/issues/9901#issuecomment-146585579) about npm install. Vagrant on Windows doesn\'t support symlinks. So we can use [`--no-bin-links`](https://docs.npmjs.com/scripts/config#bin-links) flag for it.
 - If we run Docker image on Vagrant on Windows we should comment `sendfile on;` directive at `nginx.conf`.
 - Commands:
 ```

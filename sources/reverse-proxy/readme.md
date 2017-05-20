@@ -27,7 +27,7 @@ $ docker run \
 # copy configuration files to the folder they should be managed from
 $ cp -r ./include.v/* PATH_TO_SECRETS
 
-# execute setup
+# preparations
 $ chmod +x ./build.sh && ./build.sh
 
 $ chmod +x ./run.sh && ./run.sh
@@ -38,11 +38,11 @@ $ chmod +x ./run.sh && ./run.sh
 ```
 
 ## Links
-- [letsencrypt-install](../../misc/letsencrypt-install.sh)
+- [letsencrypt-install](../../scripts/letsencrypt-install.sh)
 - [build](./include.v/build.sh)
 - [run](./include.v/run.sh)
 
-## External links
+## Refs
 - [Let's Encrypt](https://letsencrypt.org/)
 - [Certbot](https://certbot.eff.org/)
 - [SSL on Nginx](https://raymii.org/s/tutorials/Strong_SSL_Security_On_nginx.html)

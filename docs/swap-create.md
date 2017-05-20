@@ -24,4 +24,4 @@ $ sudo nano /etc/fstab
 ```
 
 ## Refs
-- [Link](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
+- [Add swap on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)

@@ -1,6 +1,13 @@
-# Vagrant setup
+# Vagrant install
 
-1. First of all we have to install VirtualBox & Vagrant on Windows.
+Guide about Vagrant install on Windows via Virtualbox
+
+## Prerequisites
+- [Vagrant](https://www.vagrantup.com/downloads.html) for Windows
+- Oracle VM [VirtualBox](https://www.virtualbox.org/)
+
+## How to
+1. First of all we have to install VirtualBox & Vagrant.
 2. Vagrant should be accessible via cli after setup (`$ vagrant`). Otherwise we have to add Vagrant\'s executable path to environment variables.
 3. Copy `../Vagrantfile` to a home directory
 4. `$ vagrant up --provider virtualbox`.
@@ -14,6 +21,9 @@
 ## Misc
 - `$ vagrant global-status` — outputs all active Vagrant\'s boxes
 - `$ vagrant reload BOX_ID` — reloads a box by `BOX_ID`
+
+## Links
+- [Docker install](../scripts/docker-install.sh)
 
 ## Refs
 - [ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64)

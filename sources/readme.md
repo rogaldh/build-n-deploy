@@ -30,6 +30,6 @@ Features:
 - Reduce number of needed modules.
 
 ## Images
+- [reverse-proxy](./reverse-proxy)
 - [tarball-image](./tarball-image) (2-nd scenario)
 - [generic-image](./app-release) (third scenario)
-- [reverse-proxy](./reverse-proxy)
