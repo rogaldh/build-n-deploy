@@ -1,14 +1,14 @@
-ARG NODEVER[=7.8]
+ARG NODEVER=7.8
 FROM node:${NODEVER}
 
 WORKDIR /usr/share/nginx/html
 
-ARG SOURCEPATH[=./]
+ARG SOURCEPATH=./
 COPY ${SOURCEPATH} ./
 
 LABEL node_version=${NODEVER}
 
-ARG NODEENV[=production]
+ARG NODEENV=production
 ENV NODE_ENV ${NODEENV}
 
 RUN apt-get update && apt-get install -y git make g++ build-essential libssl-dev python curl

@@ -1,8 +1,8 @@
+*.tar
 .git
 .gitignore
 .npmignore
-npm-debug.log
-node_modules
-/*.tar
-test
 lib
+node_modules
+npm-debug.log
+test
