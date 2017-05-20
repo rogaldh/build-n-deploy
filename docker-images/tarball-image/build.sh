@@ -11,7 +11,7 @@ read -p "Enter Node.js version (7.8): " NODEVER
 [ $PATHTOFILES == './' ] && PATHTOCOPY='../' || PATHTOCOPY='../../'
 
 # inject .gitignore
-! test -f "${PATHTOFILES}.dockerignore" && cp .dockerignore $PATHTOFILES && echo "`.dockerignore` was created"
+! test -f "${PATHTOFILES}.dockerignore" && cp .dockerignore $PATHTOFILES && echo ".dockerignore was created"
 
 # tar fallback
 if ! [ -x "$(command -v tar)" ]; then
@@ -27,10 +27,10 @@ if ! [ $(find $PATHTOFILES -type f -name 'node_modules*') ]; then
   tar -cvf ../node_modules.tar *
   cd $PATHTOCOPY
 
-  echo '`node_modules` were packed'
+  echo 'node_modules were packed'
 fi
 
-echo 'Start build procedure'
+echo "Build initiated. Image: $IMAGENAME powered by node:$NODEVER"
 docker build \
  --build-arg SOURCEPATH=$PATHTOFILES \
  --build-arg NODEVER=$NODEVER \
