@@ -11,6 +11,7 @@ read -p "Which name should aplication use (app): " NAME
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # get abs path to the script
 
+docker ps --filter "status=exited" | cut -d ' ' -f 1 | xargs sudo docker rm
 docker run \
   -v ${DIR}/../config/:/usr/share/nginx/html/config \
   --name $NAME \
