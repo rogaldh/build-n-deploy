@@ -18,9 +18,11 @@ add-apt-repository \
 
 apt-get update
 
-apt-get install -y docker-ce
+# Verify that APT is pulling from the right repository.
+apt-cache policy docker-engine
 
-echo "Docker CE was installed:"
+apt-get install -y docker-ce
 
 docker version
 
+echo "Run to verify: 'docker run hello-world'"

@@ -1,6 +1,5 @@
 #!/bin/sh -e
 
-groupadd docker
+groupadd -f docker
 
 usermod -aG docker $USER
-

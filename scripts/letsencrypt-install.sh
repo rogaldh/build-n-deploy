@@ -6,4 +6,4 @@ add-apt-repository ppa:certbot/certbot
 apt-get update
 apt-get install -y certbot
 
-echo "Woop! Let's Encrypt is installed. Run: 'certbot certonly --standalone DOMAIN_NAME,S' to generate a cert"
+echo "All good. Run: 'certbot certonly --standalone DOMAIN_NAME(S)' to generate a cert"
